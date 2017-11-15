@@ -17,7 +17,7 @@ $ npm install a11y-css-scrubber
 
 ## Why a11y-css-scrubber?
 
-This module improves site accessibility by allowing you to changing the following:
+This module improves site accessibility by allowing you to change the following:
 
  * all background color changes to white (redefinable)
  * all text & border colors changes to black (redefinable)
