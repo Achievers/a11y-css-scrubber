@@ -21,7 +21,7 @@ This module improves site accessibility by allowing you to changing the followin
 
  * all background color changes to white (redefinable)
  * all text & border colors changes to black (redefinable)
- * acess to the Dyslexie font, a font designed to improve readibility for dyslexics
+ * access to the Dyslexie font, a font designed to improve readibility for dyslexics
 
 
 ### Parameters
@@ -54,7 +54,7 @@ key              | Type   | Default | description                               
  `content`        | string  | #000000 | All boarders and text               |
  `backgrounds`    | string  | #ffffff | All background colors                            |
  `singleFile`     | string  | undefined     | All files are processed into one, single file             |
- `clearDest`      | boolean | true   | If you are not using singleFile, it is recommened that you clear the destination directory            |
+ `clearDest`      | boolean | true   | If you are not using singleFile, it is recommended that you clear the destination directory            |
 
 ## OpenDyslexic
 When your a11y high contrast css is enabled you will also have access to the OpenDyslexic font. Though not load automatically one possible method of accessing could be.
