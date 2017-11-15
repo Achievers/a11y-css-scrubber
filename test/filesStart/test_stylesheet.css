@@ -1,0 +1,27 @@
+
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+a {
+  background: transparent;
+}
+
+
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+
+.content {
+  border: 1px solid #aaaaaa;
+  background: white url(../images/comepic.png) 50% 50% repeat-x;
+  color: #222222;
+}

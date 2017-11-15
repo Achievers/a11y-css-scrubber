@@ -1,0 +1,33 @@
+{
+  "name": "a11y-css-scrubber",
+  "version": "1.0.0",
+  "description": "a11y-css-scrubber description",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --reporter spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Achievers/a11y-css-scrubber"
+  },
+  "engines": {
+    "node": ">=4.2.4"
+  },
+  "author": "“Benjmin White <“tech@achievers.com”> (“https://github.com/Achievers/a11y-css-scrubber”)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tbd/issues"
+  },
+  "homepage": "https://github.com/tbd#readme",
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^4.0.1"
+  },
+  "dependencies": {
+    "cssbeautify": "^0.3.1",
+    "cssnano": "^3.10.0"
+  },
+  "directories": {
+    "test": "test"
+  }
+}

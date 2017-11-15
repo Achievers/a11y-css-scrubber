@@ -1,0 +1,27 @@
+.content { color: #ffffff !important }
+
+.backgrounds { color: #000000 !important }
+
+a.link--content:link { color: #ffffff !important }
+
+a.link--backgrounds:link { color: #000000 !important }
+
+a.active--content:active { color: #ffffff !important }
+
+a.active--backgrounds:active { color: #000000 !important }
+
+a.hover--content:hover { color: #ffffff !important }
+
+a.hover--backgrounds:hover { color: #000000 !important }
+
+.border--content { border: 1px solid #ffffff !important }
+
+.border--backgrounds { border: 1px solid #000000  !important }
+
+.background--content { background-color: #ffffff !important }
+
+.background--backgrounds { background-color: #000000 !important }
+
+.underline--content { text-decoration: underline; -webkit-text-decoration-color: #ffffff; text-decoration-color: #ffffff !important }
+
+.background--backgrounds { text-decoration: underline; -webkit-text-decoration-color: #000000; text-decoration-color: #000000 !important }
