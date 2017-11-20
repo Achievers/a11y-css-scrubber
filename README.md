@@ -57,7 +57,7 @@ key              | Type   | Default | description                               
  `clearDest`      | boolean | true   | If you are not using singleFile, it is recommended that you clear the destination directory            |
 
 ## OpenDyslexic
-When your a11y high contrast css is enabled you will also have access to the OpenDyslexic font. Though not load automatically one possible method of accessing could be.
+When your a11y high contrast css is enabled you will also have access to the OpenDyslexic font. Though OpenDyslexic is not automatically enabled, a possible method to activate the font is:
 
 ```javascript
   var node = document.createElement('style');
