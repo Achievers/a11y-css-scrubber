@@ -1,10 +1,10 @@
 @font-face {
     font-family: 'opendyslexicregular';
-    src: url('opendyslexic-regular-webfont.eot');
-    src: url('opendyslexic-regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('opendyslexic-regular-webfont.woff') format('woff'),
-         url('opendyslexic-regular-webfont.ttf') format('truetype'),
-         url('opendyslexic-regular-webfont.svg#opendyslexicregular') format('svg');
+    src: url('opendyslexic-regular.eot');
+    src: url('opendyslexic-regular.eot?#iefix') format('embedded-opentype'),
+         url('opendyslexic-regular.woff') format('woff'),
+         url('opendyslexic-regular.ttf') format('truetype'),
+         url('opendyslexic-regular.svg#opendyslexicregular') format('svg');
     font-weight: normal;
     font-style: normal;
 }

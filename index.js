@@ -1,6 +1,7 @@
 const fs = require('fs');
 const cssbeautify = require('cssbeautify');
 const CleanCSS = require('clean-css');
+const pr = require('package-root');
 
 let startDir = '';
 let endDir = '';
@@ -27,8 +28,8 @@ function iterate(copyFrom, copyTo) {
     const writeFullPath = fullPath.replace(firstIteration, copyTo);
 
     if (fs.statSync(fullPath).isDirectory()) {
-      if (!options.singleFile) {
-        fs.mkdir(writeFullPath);
+      if (!options.singleFile && !fs.existsSync(writeFullPath)) {
+        fs.mkdirSync(writeFullPath);
       }
       iterate(`${fullPath}/`, copyTo);
     } else {
@@ -88,22 +89,25 @@ function copyerate(copyFrom, copyTo) {
     const writeFullPath = fullPath.replace(firstCopyeration, copyTo);
 
     if (fs.statSync(fullPath).isDirectory()) {
-      fs.mkdir(writeFullPath);
+      if (!fs.existsSync(writeFullPath)) {
+        fs.mkdirSync(writeFullPath);
+      }
+
       copyerate(`${fullPath}/`, endDir);
     } else {
-      let data = fs.readFileSync(fullPath, 'utf8');
 
       if (fullPath.indexOf('.css') > 0) {
+        let data = fs.readFileSync(fullPath, 'utf8');
+
         data = data.replace(/(backgrounds[ :].*)(#([a-fA-F0-9]{3}){1,2})/gm, '$1p1aceH0ld3r');
         data = data.replace(/(#([a-fA-F0-9]{3}){1,2})/gm, options.content);
         data = data.replace(/p1aceH0ld3r/gm, options.backgrounds);
-      }
 
-      fs.writeFile(writeFullPath, data, writeFileErr => {
-        if (writeFileErr) {
-          throw writeFileErr;
-        }
-      });
+        fs.writeFileSync(writeFullPath, data);
+      }
+      else{
+        fs.writeFileSync(writeFullPath, fs.readFileSync(fullPath));
+      }
     }
   });
 }
@@ -126,7 +130,7 @@ function deleteRecursive(path) {
     fs.rmdirSync(path);
   } else {
     iterate(startDir, endDir);
-   //   copyerate('pack/', endDir);
+    copyerate(pr.join("pack")+'/', endDir);
   }
 }
 

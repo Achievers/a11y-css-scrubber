@@ -1,6 +1,6 @@
 {
   "name": "a11y-css-scrubber",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "a11y-css-scrubber description",
   "main": "index.js",
   "scripts": {
@@ -24,8 +24,9 @@
     "mocha": "^4.0.1"
   },
   "dependencies": {
+    "clean-css": "^4.1.9",
     "cssbeautify": "^0.3.1",
-    "clean-css": "^4.1.9"
+    "package-root": "^0.9.2"
   },
   "directories": {
     "test": "test"
