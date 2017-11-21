@@ -66,6 +66,27 @@ When your a11y high contrast css is enabled you will also have access to the Ope
 
 ```
 
+## Helper css
+Helper css styles are also created to assist in the high contrast styling of your site. The classes listed below are be generated in the default or optionally defined colors.
+
+```css
+.a11yCssScrubber-content
+.a11yCssScrubber-backgrounds
+a.a11yCssScrubber-link--content:link
+a.a11yCssScrubber-link--backgrounds:link
+a.a11yCssScrubber-active--content:active
+a.a11yCssScrubber-active--backgrounds:active
+a.a11yCssScrubber-hover--content:hover
+a.a11yCssScrubber-hover--backgrounds:hover
+.a11yCssScrubber-border--content
+.a11yCssScrubber-border--backgrounds
+.a11yCssScrubber-background--content
+.a11yCssScrubber-background--backgrounds
+.a11yCssScrubber-underline--content
+.a11yCssScrubber-background--backgrounds
+
+```
+
 ## Tests
 
   To run the test suite, first install the dependencies, then run `npm run test`:
