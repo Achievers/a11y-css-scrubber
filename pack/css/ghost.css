@@ -15,16 +15,16 @@ a.a11yCssScrubber-hover--content:hover { color: #ffffff !important }
 a.a11yCssScrubber-hover--backgrounds:hover { color: #000000 !important }
 
 .a11yCssScrubber-border--content { border: 1px solid #ffffff !important }
-.a11yCssScrubber-border-top--content { border: 1px solid #ffffff !important }
-.a11yCssScrubber-border-bottom--content { border: 1px solid #ffffff !important }
-.a11yCssScrubber-border-left--content { border: 1px solid #ffffff !important }
-.a11yCssScrubber-border-right--content { border: 1px solid #ffffff !important }
+.a11yCssScrubber-border-top--content { border-top: 1px solid #ffffff !important }
+.a11yCssScrubber-border-bottom--content { border-bottom: 1px solid #ffffff !important }
+.a11yCssScrubber-border-left--content { border-left: 1px solid #ffffff !important }
+.a11yCssScrubber-border-right--content { border-right: 1px solid #ffffff !important }
 
 .a11yCssScrubber-border--backgrounds { border: 1px solid #000000  !important }
-.a11yCssScrubber-border-top--backgrounds { border: 1px solid #000000  !important }
-.a11yCssScrubber-border-bottom--backgrounds { border: 1px solid #000000  !important }
-.a11yCssScrubber-border-left--backgrounds { border: 1px solid #000000  !important }
-.a11yCssScrubber-border-right--backgrounds { border: 1px solid #000000  !important }
+.a11yCssScrubber-border-top--backgrounds { border-top: 1px solid #000000  !important }
+.a11yCssScrubber-border-bottom--backgrounds { border-bottom: 1px solid #000000  !important }
+.a11yCssScrubber-border-left--backgrounds { border-left: 1px solid #000000  !important }
+.a11yCssScrubber-border-right--backgrounds { border-right: 1px solid #000000  !important }
 
 .a11yCssScrubber-background--content { background-color: #ffffff !important }
 
