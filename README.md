@@ -73,14 +73,21 @@ Helper css styles are also created to assist in the high contrast styling of you
 .a11yCssScrubber-content
 .a11yCssScrubber-backgrounds
 
-a.a11yCssScrubber-link--content:link
-a.a11yCssScrubber-link--backgrounds:link
+.a11yCssScrubber-link--content:link
+.a11yCssScrubber-active--content:active
+.a11yCssScrubber-hover--content:hover
 
-a.a11yCssScrubber-active--content:active
-a.a11yCssScrubber-active--backgrounds:active
+.a11yCssScrubber-link--backgrounds:link
+.a11yCssScrubber-active--backgrounds:active
+.a11yCssScrubber-hover--backgrounds:hover
 
-a.a11yCssScrubber-hover--content:hover
-a.a11yCssScrubber-hover--backgrounds:hover
+.a11yCssScrubber-link-background--content:link
+.a11yCssScrubber-active-background--content:active
+.a11yCssScrubber-hover-background--content:hover
+
+.a11yCssScrubber-link-background--backgrounds:link
+.a11yCssScrubber-active-background--backgrounds:active
+.a11yCssScrubber-hover-background--backgrounds:hover
 
 .a11yCssScrubber-border--content
 .a11yCssScrubber-border-top--content

@@ -1,18 +1,21 @@
 .a11yCssScrubber-content { color: #ffffff !important }
-
 .a11yCssScrubber-backgrounds { color: #000000 !important }
 
-a.a11yCssScrubber-link--content:link { color: #ffffff !important }
+.a11yCssScrubber-link--content:link { color: #ffffff !important }
+.a11yCssScrubber-active--content:active { color: #ffffff !important }
+.a11yCssScrubber-hover--content:hover { color: #ffffff !important }
 
-a.a11yCssScrubber-link--backgrounds:link { color: #000000 !important }
+.a11yCssScrubber-link--backgrounds:link { color: #000000 !important }
+.a11yCssScrubber-active--backgrounds:active { color: #000000 !important }
+.a11yCssScrubber-hover--backgrounds:hover { color: #000000 !important }
 
-a.a11yCssScrubber-active--content:active { color: #ffffff !important }
+.a11yCssScrubber-link-background--content:link { background-color: #ffffff !important }
+.a11yCssScrubber-active-background--content:active { background-color: #ffffff !important }
+.a11yCssScrubber-hover-background--content:hover { background-color: #ffffff !important }
 
-a.a11yCssScrubber-active--backgrounds:active { color: #000000 !important }
-
-a.a11yCssScrubber-hover--content:hover { color: #ffffff !important }
-
-a.a11yCssScrubber-hover--backgrounds:hover { color: #000000 !important }
+.a11yCssScrubber-link-background--backgrounds:link { background-color: #000000 !important }
+.a11yCssScrubber-active-background--backgrounds:active { background-color: #000000 !important }
+.a11yCssScrubber-hover-background--backgrounds:hover { background-color: #000000 !important }
 
 .a11yCssScrubber-border--content { border: 1px solid #ffffff !important }
 .a11yCssScrubber-border-top--content { border-top: 1px solid #ffffff !important }
@@ -27,10 +30,10 @@ a.a11yCssScrubber-hover--backgrounds:hover { color: #000000 !important }
 .a11yCssScrubber-border-right--backgrounds { border-right: 1px solid #000000  !important }
 
 .a11yCssScrubber-background--content { background-color: #ffffff !important }
-
 .a11yCssScrubber-background--backgrounds { background-color: #000000 !important }
 
 .a11yCssScrubber-underline--content { text-decoration: underline; -webkit-text-decoration-color: #ffffff; text-decoration-color: #ffffff !important }
-
 .a11yCssScrubber-background--backgrounds { text-decoration: underline; -webkit-text-decoration-color: #000000; text-decoration-color: #000000 !important }
+
+
 
