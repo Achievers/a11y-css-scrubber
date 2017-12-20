@@ -32,7 +32,8 @@ This module improves site accessibility by allowing you to change the following:
     "content": "",
     "backgrounds": "",
     "singleFile": "",
-    "clearDest": ""
+    "clearDest": "",
+    "fontsBase64": ""
   },
   "src": "",
   "dest": ""
@@ -51,10 +52,11 @@ key              | Type   | Default | description                               
 
  key              | Type    | Default | description                                                              |
 ------------------|---------|---------|--------------------------------------------------------------------------|
- `content`        | string  | #000000 | All boarders and text               |
- `backgrounds`    | string  | #ffffff | All background colors                            |
- `singleFile`     | string  | undefined     | All files are processed into one, single file             |
- `clearDest`      | boolean | true   | If you are not using singleFile, it is recommended that you clear the destination directory            |
+ `content`        | string  | #000000 | All boarders and text |
+ `backgrounds`    | string  | #ffffff | All background colors |
+ `singleFile`     | string  | undefined     | All files are processed into one, single file |
+ `clearDest`      | boolean | true   | If you are not using singleFile, it is recommended that you clear the destination directory |
+ `fontsBase64`      | boolean | false   | Use Base64 encode fonts or standard font files |
 
 ## OpenDyslexic
 When your a11y high contrast css is enabled you will also have access to the OpenDyslexic font. Though OpenDyslexic is not automatically enabled, a possible method to activate the font is:

@@ -5,7 +5,7 @@ const pr = require('package-root');
 
 let startDir = '';
 let endDir = '';
-let options = { singleFile: '', clearDest: false, content: '#000000', backgrounds: '#ffffff' };
+let options = { singleFile: '', clearDest: false, content: '#000000', backgrounds: '#ffffff', fontsBase64: false };
 
 let firstIteration = '';
 let customCss = '@import url("font/stylesheet.css");';
@@ -93,8 +93,14 @@ function copyerate(copyFrom, copyTo) {
       fs.mkdirSync(copyTo + folder);
     }
 
-    fs.writeFileSync(copyTo + folder + file, fs.readFileSync(copyFrom + file));
-
+    if (options.fontsBase64) {
+      if (file.split('.').pop() === 'css') {
+        fs.writeFileSync(copyTo + folder + file, fs.readFileSync(copyFrom + file));
+      }
+    }
+    else{
+      fs.writeFileSync(copyTo + folder + file, fs.readFileSync(copyFrom + file));
+    }
   });
 }
 
@@ -116,7 +122,7 @@ function deleteRecursive(path) {
     fs.rmdirSync(path);
   } else {
     iterate(startDir, endDir);
-    copyerate(moduleRoot+'/font/', endDir);
+     copyerate(moduleRoot+'/font/', endDir);
   }
 }
 
@@ -136,6 +142,10 @@ function startIterator(data) {
   ghostCss = ghostCss.replace(/(#([a-fA-F0-9]{3}){1,2})/gm, options.content);
   ghostCss = ghostCss.replace(/p1aceH0ld3r/gm, options.backgrounds);
   ghostCss = new CleanCSS({ level: 2 }).minify(ghostCss);
+
+  if (options.fontsBase64) {
+   customCss = '@import url("font/stylesheetBase64.css");';
+  }
 
   customCss = customCss.concat(ghostCss.styles);
 
