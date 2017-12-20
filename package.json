@@ -1,6 +1,6 @@
 {
   "name": "a11y-css-scrubber",
-  "version": "1.1.7",
+  "version": "1.2.0",
   "description": "a11y-css-scrubber description",
   "main": "index.js",
   "scripts": {
