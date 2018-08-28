@@ -93,14 +93,7 @@ function copyerate(copyFrom, copyTo) {
       fs.mkdirSync(copyTo + folder);
     }
 
-    if (options.fontsBase64) {
-      if (file.split('.').pop() === 'css') {
-        fs.writeFileSync(copyTo + folder + file, fs.readFileSync(copyFrom + file));
-      }
-    }
-    else{
-      fs.writeFileSync(copyTo + folder + file, fs.readFileSync(copyFrom + file));
-    }
+    fs.writeFileSync(copyTo + folder + file, fs.readFileSync(copyFrom + file));
   });
 }
 
