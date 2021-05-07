@@ -75,7 +75,7 @@ function iterate(copyFrom, copyTo) {
   });
 }
 
-function copyerate(copyFrom, copyTo) {
+function copyChildren(copyFrom, copyTo) {
   if (!fs.existsSync(copyTo)) {
     fs.mkdirSync(copyTo);
   }
@@ -115,7 +115,7 @@ function deleteRecursive(path) {
     fs.rmdirSync(path);
   } else {
     iterate(startDir, endDir);
-     copyerate(moduleRoot+'/font/', endDir);
+    copyChildren(moduleRoot+'/font/', endDir);
   }
 }
 
